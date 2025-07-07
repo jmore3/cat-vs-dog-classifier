@@ -40,11 +40,13 @@ cat-vs-dog-classifier/
    git clone https://github.com/YOUR_USERNAME/cat-vs-dog-classifier.git
    cd cat-vs-dog-classifier
 
-2. **Create and activate a virtual environment** 
+2. **Create and activate a virtual environment**
+   ```bash
     python -m venv venv
     source venv/Scripts/activate  # Git Bash / PowerShell on Windows
 
 3. **Install dependencies**
+   ```bash
     pip install -r requirements.txt
 
 4. **Download the Microsoft "Cats vs Dogs" dataset**
@@ -54,22 +56,20 @@ cat-vs-dog-classifier/
         data/raw/PetImages/Dog/...
 
 5. **Prepare the dataset**
+    ```bash
     python src/prepare_data.py
 
 6. **Load data generators**
+    ```bash
     python src/load_data.py
     # Should report train/val/test image counts
 
 ## Next Steps (Coming Soon)
-    Build and train the CNN (src/train_model.py)
-
-    Evaluate model performance on the test set
-
-    Plot accuracy & loss graphs
-
-    Add an inference script (predict.py)
-
-    Optional: Create a web/CLI interface
+1. **Build and train the CNN (src/train_model.py)**
+2. **Evaluate model performance on the test set**
+3. **Plot accuracy & loss graphs**
+4. **Add an inference script (predict.py)**
+5. **Optional: Create a web/CLI interface**
 
 ## Requirements
 Package	/ Description
@@ -81,9 +81,9 @@ scikit-learn / (Future) Model evaluation tools
 See requirements.txt for full details.
 
 ## License & Credits
-    Data: Microsoft"Cats vs Dogs" dataset
-    Model: Designed for personal learning use
-    Feel free to fork, experiment, and improve
+   Data: Microsoft"Cats vs Dogs" dataset
+   Model: Designed for personal learning use
+   Feel free to fork, experiment, and improve
 
 ## Current Checkpoint:
-    Repository is clean, organized, and ready for the next phase—training the CNN model. My next steps include: training the CNN, visualize results, then add inference and front-end UI.
+   Repository is clean, organized, and ready for the next phase—training the CNN model.
