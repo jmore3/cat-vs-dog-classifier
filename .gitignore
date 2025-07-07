@@ -1,0 +1,16 @@
+# Virtual environment
+venv/
+
+# Python cache
+__pycache__/
+*.pyc
+
+# Jupyter notebook cache
+*.ipynb_checkpoints/
+
+# Trained models
+models/
+
+# (Optional) Ignore large dataset folders
+data/raw/
+data/processed/
